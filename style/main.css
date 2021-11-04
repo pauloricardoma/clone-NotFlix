@@ -1,0 +1,105 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* elementos base */
+body {
+  background: var(--preta);
+  font-family: Arial, Times, serif;
+  font-size: 1.6rem;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 1rem;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* filme ptinvipal */
+.filme-principal {
+  font-size: 1.6rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/baA21LCF2LSOrExY19e5RvTCZ1R.jpg");
+  background-size: cover;
+  height: 48rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 4rem;
+}
+
+.filme-principal .titulo {
+  margin-top: 10rem;
+  font-size: 4rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: var(--preta);
+}
+
+.botao i {
+  margin-right: 0.8rem;
+}
+.container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 0.5rem;
+}
